@@ -74,7 +74,7 @@ namespace Tynamix.ObjectFiller
         internal static bool IsInterface(this Type source)
         {
 #if NETSTANDARD
-            return source.GetTypeInfo().IsInterface;
+                        return source.GetTypeInfo().IsInterface;
 #else
             return source.IsInterface;
 #endif
@@ -132,7 +132,7 @@ namespace Tynamix.ObjectFiller
                 }
             }
 
-            if (typeInfo.BaseType != null)
+            if(typeInfo.BaseType != null)
             {
                 return GetDeclaredPropertyInfosRecursive(propertyInfos, typeInfo.BaseType.GetTypeInfo());
             }
@@ -141,6 +141,8 @@ namespace Tynamix.ObjectFiller
         }
 
 #endif
+
+
 
         internal static Type[] GetGenericTypeArguments(this Type source)
         {
