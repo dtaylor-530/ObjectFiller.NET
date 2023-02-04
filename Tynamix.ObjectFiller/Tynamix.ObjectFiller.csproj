@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<Version>1.5.9</Version>
 		<Authors>Roman Lautner, Hendrik L., Christian Harlass, GothikX</Authors>
@@ -183,10 +183,6 @@
 		<FileVersion>1.5.7</FileVersion>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.0' OR '$(TargetFramework)' == 'netstandard1.3' OR '$(TargetFramework)' == 'netstandard2.0'">
-		<DefineConstants>NETSTANDARD</DefineConstants>
 	</PropertyGroup>
 
 	<ItemGroup>
